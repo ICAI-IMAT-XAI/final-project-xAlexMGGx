@@ -58,7 +58,7 @@ def main():
     
     # User-defined Hyperparameter Grid
     param_grid = {
-        'n_estimators': [i for i in range(1, 101)], # Granular search from 1 to 100 trees
+        'n_estimators': [i*10 for i in range(1, 11)], # Granular search from 1 to 100 trees
         'max_depth': [5, 10, None],      # Control overfitting
         'min_samples_leaf': [5, 10],     # Smoothing leaf nodes
         'class_weight': ['balanced']     # Handle class imbalance
